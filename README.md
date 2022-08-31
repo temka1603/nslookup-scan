@@ -16,7 +16,7 @@ chmod +x FGDS.sh
 ```
 
 **If you want scan more hosts:**
-Example of range 10.10.65-95.1-254 (10.10.64.0/19)
+Example of range 10.10.64-95.1-254 (10.10.64.0/19)
 ```
 for octet in {64..95}; do ./nslookup_scan.sh 10.10.$octet; done
 ```
