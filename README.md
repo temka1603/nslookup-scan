@@ -14,3 +14,9 @@ Example of scan of subnet **10.10.10.0/24**
 chmod +x FGDS.sh
 ./nslookup_scan.sh 10.10.10
 ```
+
+**If you want scan more hosts:**
+Example of range 10.10.65-95.1-254 (10.10.64.0/19)
+```
+for octet in {64..95}; do ./nslookup_scan.sh 10.10.$octet; done
+```
